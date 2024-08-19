@@ -8,11 +8,17 @@ let thenav = document.querySelector("nav");
 
 window.addEventListener("scroll", function() {
     if (thenav.style.top === "0px" || window.scrollY === 0) {
+        thenav.style.backgroundColor = "#27273c";
         thenav.style.setProperty("border-radius", "0px");
         thenav.style.setProperty("width", "100%")
     } else {
         thenav.style.setProperty("border-radius", "30px");
         thenav.style.setProperty("width", "1200px")
+    }
+    if (window.scrollY > 400) {
+        thenav.style.backgroundColor = "#86377b";
+    } else {
+        thenav.style.backgroundColor = "#27273c";
     }
 })
 
@@ -186,7 +192,7 @@ function displayCards3() {
         } else if (i === 1) {
             window.localStorage.setItem("img5", group3[i]);
             window.localStorage.setItem("name5", "Batman");
-            window.localStorage.setItem("opinion5", "Even Gotham needs order. This app ensures I stay organized, whether I'm tracking criminal activity or my daily tasks. It's efficient, no distractions—just pure focus on what needs to be done.");
+            window.localStorage.setItem("opinion5", "Even Gotham needs order. This app ensures I stay organized, whether I'm tracking criminal activity or my daily tasks. It's efficient, no distractions—just pure focus.");
 
             let srcimg5 = window.localStorage.getItem("img5");
             let name5 = window.localStorage.getItem("name5");

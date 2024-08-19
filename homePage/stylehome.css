@@ -106,7 +106,7 @@ nav {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 3000;
+    z-index: 3100;
     padding: 0;
 }
 
@@ -136,12 +136,12 @@ nav ul li a {
 }
 
 nav img {
+    padding-top: 10px;
     padding-left: 30px;
-    height: 65px;
-    width: 85px;
+    height: 115px;
+    width: 125px;
     margin-left: 80px;
-    /* make it circle */
-    border-radius: 50%;
+
 }
 
 nav  a{
@@ -323,7 +323,7 @@ main {
 #opinions {
     margin-top: 60px;
     background-color: #650058;
-    height: 140vh;
+    height: 160vh;
     width: 100%;
     display: flex;
     text-align: center;
@@ -331,20 +331,24 @@ main {
     align-items: center;
     z-index: 3001;
 }
+
+#opinions .stars {
+    padding-top: 40px;
+    width: 510px !important;
+    height: 210px !important;
+}
 #opinions h2 {
-    margin-top: 40px;
-    z-index: 3001;
+    margin-top: 20px;
+    z-index: 3000;
     padding: 30px;
     color: white;
     font-size: 3.2rem;
     font-weight: 100;
-    z-index: 3001;
 }
 #opinions p {
     color: white ;
     font-size: 1.2rem;
     letter-spacing: 2px;
-    z-index: 3001;
 }
 
 
@@ -422,6 +426,7 @@ main {
 }
 .main-card {
     scale: 1.1;
+    transition: 0.5s;
 }
 .sub-card {
     scale: 0.9;
