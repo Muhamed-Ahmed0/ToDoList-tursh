@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signupstyle.css">
+    <link rel="icon" type="image/png" href="/imgs/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Login-register</title>
+</head>
+<body>
+    <main class="d"></main>
+    <main class="d"></main>
+    <main class="d"></main>
+    <main class="d"></main>
+    <main class="d"></main>
+    <main class="d"></main>
+    <main class="d"></main>
+    <main class="d"></main>
+    <main class="d"></main>
+    <main class="d"></main>
+
+    <form id="auth" action="/signup" method="post">
+        <h2 id="title">Sign up</h2>
+        <p id="txt">Sign up to start using our website</p>
+        <input type="text" placeholder="Username" name="Username" required id="username">
+        <input type="email" placeholder="Email" name="Email" id="email">
+        <input type="password" placeholder="Password" name="Password" required id="pass" minlength="8">
+        <input type="password" placeholder="Confirm Password" name="confirm-password" required id="confirm-pass" minlength="8">
+        <button type="submit" id="btn"><i class="fa-solid fa-arrow-right-to-bracket"></i> Sign up</button>
+        <p id="reg">Already have an account? <a href="/auth/login/login.html" id="reg-btn">Login</a></p>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/gh/noumanqamar450/alertbox@main/version/1.0.2/alertbox.min.js"></script>
+    <script src="signupscript.js"></script>
+</body>
+</html>
